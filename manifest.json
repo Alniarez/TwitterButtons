@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "Twitter extra buttons",
+  "version": "1",
+  
+  "icons": {
+	"16": "icons/16.png",
+	"38": "icons/38.png",
+	"48": "icons/48.png",
+	"96": "icons/96.png"
+	},
+
+  "description": "Add view and download buttons to Twitter posts.",
+	
+  "permissions": [
+    "tabs", "downloads"
+  ],
+
+  "content_scripts": [
+	{
+      "matches": ["*://*.twitter.com/*"],
+	  "js": ["all.js"]
+    }
+  ]
+
+}
